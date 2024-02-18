@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 p{
-    color: white;
+    color: black;
 }
 
 h5{
@@ -54,4 +54,27 @@ h4{
 }
 .shadowcuatom{
     box-shadow: 0 -4px #1DD100 inset;
+}
+.topshadwo{
+    box-shadow: 0 2px #1DD100 inset;
+    border-top-right-radius: 90px;
+    border-top-left-radius: 90px;
+}
+.tecket{
+    height: 220px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 530px;
+}
+.bginfo{
+    background-image: url(images/infoo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    background-size: 1100px;
+}
+.line{
+    background-image: url(images/line.png);
+    background-repeat: no-repeat;
+    background-position:right;
 }
