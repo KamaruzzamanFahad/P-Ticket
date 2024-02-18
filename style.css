@@ -78,3 +78,21 @@ h4{
     background-repeat: no-repeat;
     background-position:right;
 }
+.seats{
+    background-color: #f5f5f5;
+    padding: 15px 40px;
+    border-radius: 10px;
+}
+.SEATBOX span{
+    color: rgb(102, 102, 102);
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+.titletk{
+    font-weight: 700;
+    font-family: Inter, sans-serif;
+}
+footer * {
+    color: #fff;
+  }
+  
