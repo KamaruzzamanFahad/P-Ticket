@@ -54,13 +54,16 @@ for(let i =0; i< allseat.length; i++){
             
         }
         
-        if(count >=1){
+        if(count >=4){
             applybtn.disabled = false;
+            applybtn.classList.remove('bg-[#dddddd]');
+            applybtn.classList.add('bg-[#1cd100]');
         }
 
         if(count >=1 && PassengerName.value.length > 2 && PhoneNumber.value.length >2 ){
             nextbutton.disabled = false;
-            console.log("enabled");
+            nextbutton.classList.remove('bg-[#dddddd]');
+            nextbutton.classList.add('bg-[#1cd100]');
         }
     })
 }
@@ -68,11 +71,15 @@ for(let i =0; i< allseat.length; i++){
 document.addEventListener("keyup", function(){
     if(count >=1 && PassengerName.value.length > 2 && PhoneNumber.value.length >2 ){
         nextbutton.disabled = false;
-        console.log("enabled");
+        nextbutton.classList.remove('bg-[#dddddd]');
+        nextbutton.classList.add('bg-[#1cd100]');
+        
     }
 
-    if(count >=1){
+    if(count >=4){
         applybtn.disabled = false;
+        applybtn.classList.remove('bg-[#dddddd]');
+        applybtn.classList.add('bg-[#1cd100]');
     }
 
     
@@ -94,7 +101,7 @@ document.getElementById("apply").addEventListener('click',function(){
         }
         
         if(copunfildsvalue == "NEW15" || copunfildsvalue == 'Couple 20'){
-        discountvalues.innerText = '-'+ discount;
+        discountvalues.innerText = discount;
         grandTotal.innerText = grandTotal.innerText - discount;
         copundiv.classList.add('hidden');
         discounts.classList.remove('hidden');
