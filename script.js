@@ -13,7 +13,7 @@ const discountvalues = document.getElementById('discountvalue');
 const PassengerName = document.getElementById('PassengerName');
 const PhoneNumber = document.getElementById('PhoneNumber');
 const nextbutton = document.getElementById('nextbutton');
-// const modal = document.getElementById('modal');
+const applybtn = document.getElementById('apply');
 
 for(let i =0; i< allseat.length; i++){
 
@@ -53,8 +53,31 @@ for(let i =0; i< allseat.length; i++){
             }
             
         }
+        
+        if(count >=1){
+            applybtn.disabled = false;
+        }
+
+        if(count >=1 && PassengerName.value.length > 2 && PhoneNumber.value.length >2 ){
+            nextbutton.disabled = false;
+            console.log("enabled");
+        }
     })
 }
+
+document.addEventListener("keyup", function(){
+    if(count >=1 && PassengerName.value.length > 2 && PhoneNumber.value.length >2 ){
+        nextbutton.disabled = false;
+        console.log("enabled");
+    }
+
+    if(count >=1){
+        applybtn.disabled = false;
+    }
+
+    
+})
+
 
 let discount;
 document.getElementById("apply").addEventListener('click',function(){
@@ -78,15 +101,3 @@ document.getElementById("apply").addEventListener('click',function(){
         }        
     }
 })
-
-document.addEventListener("keyup", function(){
-    if(count >=1 && PassengerName.value.length > 2 && PhoneNumber.value.length >2 ){
-        nextbutton.disabled = false;
-        console.log("enabled");
-    }
-    
-})
-
-// nextbutton.addEventListener('click', function(){
-//     modal.showModal();
-// })
