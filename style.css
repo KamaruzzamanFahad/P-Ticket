@@ -92,7 +92,11 @@ h4{
     font-weight: 700;
     font-family: Inter, sans-serif;
 }
+.bg-green{
+    background-color: #1DD100;
+}
 footer * {
     color: #fff;
   }
+
   
